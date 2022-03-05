@@ -1,8 +1,46 @@
+:root {
+  --bs-primary-color: #dc3546;
+}
+
+body {
+  background-color: rgb(224, 113, 113) !important;
+}
+
+.navbar-brand {
+  color: #dc3546 !important;
+}
+
 .site-content .container {
   height: calc(100vh - 3.625rem);
+}
+
+.card {
+  border: 3px solid var(--bs-primary-color) !important;
+  background-color: #f8f9fb !important;
 }
 
 .birthday label {
   padding-left: 0;
   margin-bottom: 1vh;
+}
+
+.card-header {
+  background-image: url(/assets/header.png);
+  color: #fff;
+}
+
+.card-footer {
+  color: rgb(211, 211, 211);
+  background-image: url(/assets/footer.png);
+}
+
+.form-check-input:checked {
+  background-color: var(--bs-primary-color) !important;
+  border-color: var(--bs-primary-color) !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(239, 104, 104, 0.6) !important;
+}
+
+.form-select:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(239, 104, 104, 0.6) !important;
+  border-color: var(--bs-primary-color) !important;
 }
