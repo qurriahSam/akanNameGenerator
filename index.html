@@ -34,10 +34,15 @@
               gender.
             </p>
 
-            <form action="#">
-              <div class="birthday text-start row ps-md-5 pe-md-5">
-                <label for="birthday">Birthday:</label>
-                <select class="form-select col" id="day" name="day" aria-label="month">
+            <form class="text-start ps-md-5" action="#">
+              <label for="birthday">Birthday:</label>
+              <div class="birthday d-flex flex-column flex-sm-row text-start pe-md-5 pt-2 pb-3">
+                <select
+                  class="form-select me-sm-2 mb-2 mb-sm-0"
+                  id="day"
+                  name="day"
+                  aria-label="month"
+                >
                   <option>day</option>
                   <option value="01">01</option>
                   <option value="02">02</option>
@@ -71,8 +76,12 @@
                   <option value="30">30</option>
                   <option value="31">31</option>
                 </select>
-
-                <select class="form-select col" id="month" name="month" aria-label="month">
+                <select
+                  class="form-select me-sm-2 mb-2 mb-sm-0"
+                  id="month"
+                  name="month"
+                  aria-label="month"
+                >
                   <option>month</option>
                   <option value="01">January</option>
                   <option value="02">February</option>
@@ -87,8 +96,7 @@
                   <option value="11">November</option>
                   <option value="12">December</option>
                 </select>
-
-                <select class="form-select col" id="year" name="year" aria-label="year">
+                <select class="form-select" id="year" name="year" aria-label="year">
                   <option>year</option>
                   <option value="1940">1940</option>
                   <option value="1941">1941</option>
@@ -174,6 +182,22 @@
                   <option value="2021">2021</option>
                   <option value="2022">2022</option>
                 </select>
+              </div>
+              <label for="gender"></label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="male" value="male" />
+                <label class="form-check-label" for="male">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="female"
+                  value="female"
+                  checked
+                />
+                <label class="form-check-label" for="female">Female</label>
               </div>
             </form>
           </div>
