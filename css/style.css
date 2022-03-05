@@ -1,3 +1,8 @@
 .site-content .container {
   height: calc(100vh - 3.625rem);
 }
+
+.birthday label {
+  padding-left: 0;
+  margin-bottom: 1vh;
+}
