@@ -43,10 +43,17 @@ btn.addEventListener("click", (e) => {
     }, 5000);
   };
 
-  if (date == 0 || month == 0 || year == 0) {
+  const resetSelected = () => {
+    document.querySelector("#day").value = "00";
+    document.querySelector("#month").value = "00";
+    document.querySelector("#year").value = "00";
+  };
+
+  if (btn.innerHTML != "Return" && (date == 0 || month == 0 || year == 0)) {
     alert("Kindly fill all sections");
   } else {
     getAkan(date, month, year);
     btnChange();
+    resetSelected();
   }
 });
