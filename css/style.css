@@ -57,3 +57,16 @@ body {
     opacity: 1;
   }
 }
+
+.name-display {
+  min-width: 55vw;
+  min-height: 30vh;
+}
+
+.hide {
+  display: none;
+}
+
+.akan-name {
+  min-height: 25vh;
+}
