@@ -1,7 +1,6 @@
 let btn = document.querySelector("#btn");
 let nameOut = document.querySelector("#nameOut");
 let maleObj = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-
 let femaleObj = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 btn.addEventListener("click", (e) => {
@@ -25,16 +24,19 @@ btn.addEventListener("click", (e) => {
     }
   };
 
+  const hideToggle = () => {
+    formDisplay.classList.toggle("hide");
+    nameDisplay.classList.toggle("hide");
+  };
+
   const btnChange = () => {
     btn.classList.toggle("btn-animate");
     if (btn.innerHTML != "Return") {
       btn.innerHTML = "Return";
-      formDisplay.classList.toggle("hide");
-      nameDisplay.classList.toggle("hide");
+      hideToggle();
     } else {
       btn.innerHTML = ` Submit <i class="fa-solid fa-arrow-right">`;
-      formDisplay.classList.toggle("hide");
-      nameDisplay.classList.toggle("hide");
+      hideToggle();
     }
     setTimeout(() => {
       btn.classList.toggle("btn-animate");
