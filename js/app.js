@@ -23,9 +23,22 @@ btn.addEventListener("click", (e) => {
     }
   };
 
+  const btnChange = () => {
+    btn.classList.toggle("btn-animate");
+    if (btn.innerHTML != "Return") {
+      btn.innerHTML = "Return";
+    } else {
+      btn.innerHTML = ` Submit <i class="fa-solid fa-arrow-right">`;
+    }
+    setTimeout(() => {
+      btn.classList.toggle("btn-animate");
+    }, 5000);
+  };
+
   if (date == 0 || month == 0 || year == 0) {
     alert("Kindly fill all sections");
   } else {
     getAkan(date, month, year);
+    btnChange();
   }
 });
