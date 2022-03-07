@@ -27,13 +27,13 @@ body {
 }
 
 .card-header {
-  background-image: url(./assets/header.png);
+  background-image: url(../assets/header.png);
   color: #fff;
 }
 
 .card-footer {
   color: rgb(211, 211, 211);
-  background-image: url(./assets/footer.png);
+  background-image: url(../assets/footer.png);
 }
 
 .form-check-input:checked {
