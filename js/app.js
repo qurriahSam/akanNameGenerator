@@ -1,32 +1,31 @@
 let btn = document.querySelector("#btn");
-let maleObj = {
-  sunday: "Kwasi",
-  monday: "Kwadwo",
-  tuesday: "Kwabena",
-  wednesday: "Kwaku",
-  thursday: "Yaw",
-  friday: "Kofi",
-  saturday: "Kwame",
-};
+let nameOut = document.querySelector("#nameOut");
+let maleObj = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 
-let femaleObj = {
-  sunday: "Akosua",
-  monday: "Adwoa",
-  tuesday: "Abenaa",
-  wednesday: "Akua",
-  thursday: "Yaa",
-  friday: "Afua",
-  saturday: "Ama",
-};
+let femaleObj = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 btn.addEventListener("click", (e) => {
   e.preventDefault();
-  let day = parseInt(document.querySelector("#day").value);
-  let month = parseInt(document.querySelector("#month").value);
-  let year = parseInt(document.querySelector("#year").value);
+
+  let date = document.querySelector("#day").value;
+  let month = document.querySelector("#month").value;
+  let year = document.querySelector("#year").value;
   let gender = document.querySelector(".form-check-input:checked").value;
 
-  if (day === 0 || month === 0 || year === 0) {
+  const getAkan = (date, month, year) => {
+    const userDate = new Date(`${month} ${date} ${year}`);
+    let day = userDate.getDay();
+
+    if (gender === "male") {
+      nameOut.innerText = `Your Akan Name is ${maleObj[day]}`;
+    } else {
+      nameOut.innerText = `Your Akan Name is ${femaleObj[day]}`;
+    }
+  };
+
+  if (date == 0 || month == 0 || year == 0) {
     alert("Kindly fill all sections");
+  } else {
+    getAkan(date, month, year);
   }
 });
