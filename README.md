@@ -45,7 +45,7 @@ This is a web application that generates Akan Names from Ghanian Culture.
 
 ### Links
 
-- Live Site URL: [Akan-Name-Generator]()
+- Live Site URL: [Akan-Name-Generator](https://qurriahsam.github.io/akanNameGenerator/)
 
 [Go Back to the top](#Akan_Name_Generator)
 
