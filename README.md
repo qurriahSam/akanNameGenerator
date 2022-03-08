@@ -28,7 +28,7 @@ This is a web application that generates Akan Names from Ghanian Culture.
 
 ### Installation
 
-- On your computer open terminal and run:
+- On your computer open terminal and run: <br />
   `git clone https://github.com/qurriahSam/akanNameGenerator.git`
 
 [Go Back to the top](#Akan_Name_Generator)
