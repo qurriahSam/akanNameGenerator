@@ -12,11 +12,11 @@
 
 This is a web application that generates Akan Names from Ghanian Culture.
 
-### Screenshot
+## Screenshot
 
 ![Website screenshot](./assets/Screenshot.png)
 
-### Install Requirements
+## Install Requirements
 
 - Computer.
 
@@ -26,10 +26,11 @@ This is a web application that generates Akan Names from Ghanian Culture.
 
 - Terminal.
 
-### Installation
+## Installation
 
-- On your computer open terminal and run: <br />
-  `git clone https://github.com/qurriahSam/akanNameGenerator.git`
+On your computer open terminal and run:
+
+    git clone https://github.com/qurriahSam/akanNameGenerator.git
 
 [Go Back to the top](#Akan_Name_Generator)
 
@@ -43,7 +44,7 @@ This is a web application that generates Akan Names from Ghanian Culture.
 
 - Bootstrap - Has been used for styling the navbar and other elements on the landingpage.
 
-### Links
+## Links
 
 - Live Site URL: [Akan-Name-Generator](https://qurriahsam.github.io/akanNameGenerator/)
 
