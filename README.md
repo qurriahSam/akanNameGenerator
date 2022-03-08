@@ -3,10 +3,12 @@
 ## Table of Content
 
 - [Description](#description)
-- [Technology Used](#technology-used)
+- [Screenshot](#screenshot)
+- [Installation](#install-requirements)
+- [Technology Used](#technology)
 - [Reference](#reference)
-- [Licence](#licence)
-- [Authors Info](#author-Info)
+- [Licence](#license)
+- [Authors Info](#authors-Info)
 
 ## Description
 
