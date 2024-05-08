@@ -20,10 +20,6 @@ This is a web application that generates Akan Names from Ghanian Culture.
 
 ## Install Requirements
 
-- Computer.
-
-- Internet Access.
-
 - git.
 
 - Terminal.
